@@ -1,5 +1,6 @@
 // global variable used in window.onscroll function
 var addwrt = false;
+var nav = false;
 
 window.onscroll = function() {
   const navbar = document.getElementById("navbar");
@@ -8,10 +9,17 @@ window.onscroll = function() {
   let child;
   if (
     document.documentElement.scrollTop > 50 &&
-    document.documentElement.scrollTop < 200
+    document.documentElement.scrollTop < 100
   ) {
     navbar.className = "BG-col TR-dur wh-col ";
-    navbar1.className = "d-none";
+    if (nav === true) {
+      nav = false;
+      navbar1.className = "nav1-anim-cl";
+      setTimeout(function() {
+        navbar1.className = "d-none";
+      }, 400);
+    }
+
     if (addwrt === false) {
       child = document.createElement("span");
       child.innerHTML = " : NEW YORK";
@@ -21,7 +29,8 @@ window.onscroll = function() {
     }
   } else if (document.documentElement.scrollTop > 200) {
     navbar.className = "BG-col TR-dur wh-col ";
-    navbar1.className = "d-flex BG-col wh-col ";
+    navbar1.className = "d-flex nav1-anim-op BG-col wh-col ";
+    nav = true;
     if (addwrt === false) {
       child = document.createElement("span");
       child.innerHTML = " : NEW YORK";
@@ -31,6 +40,7 @@ window.onscroll = function() {
     }
   } else if (document.documentElement.scrollTop < 50) {
     navbar.className = "BG-ncol TR-dur wh-col ";
+    navbar1.className = "d-none";
     writing.innerHTML = "DATA USA";
     addwrt = false;
   }
