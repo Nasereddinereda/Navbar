@@ -18,7 +18,7 @@ function closeSlideMenu() {
   const side = document.getElementById("af");
   side.className = "d-none afterside";
   var menu = document.getElementById("menu");
-  menu.className = "nav  sd-anim-cl";
+  menu.className = "nav sd-anim-cl d-flex f-col";
   document.body.style.overflow = "";
 
   if (("2 : ", document.documentElement.scrollTop > 50)) {
