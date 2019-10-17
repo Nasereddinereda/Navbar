@@ -4,8 +4,9 @@ function openSlideMenu() {
   const menu = document.getElementById("menu");
   const side = document.getElementById("af");
   side.className = "d-block afterside ";
-  document.body.style.overflow = "hidden";
   menu.className = "nav d-flex f-col sd-anim-op ";
+
+  document.body.style.overflow = "hidden";
 
   if (document.documentElement.scrollTop > 50) {
     const navbar = document.getElementById("navbar");
@@ -19,11 +20,12 @@ function closeSlideMenu() {
   var menu = document.getElementById("menu");
   menu.className = "nav  sd-anim-cl";
   document.body.style.overflow = "";
-  if (document.documentElement.scrollTop > 50) {
+
+  if (("2 : ", document.documentElement.scrollTop > 50)) {
     const navbar = document.getElementById("navbar");
     navbar.className = "BG-col TR-dur wh-col ";
   }
   setTimeout(function() {
     menu.className = "d-none";
-  }, 1000);
+  }, 500);
 }
