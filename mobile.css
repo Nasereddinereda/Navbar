@@ -1,0 +1,37 @@
+/* Utils  */
+
+.ft-5 {
+  font-size: 20px;
+}
+
+/* Navbar */
+.close span {
+  display: none;
+}
+
+#writing span {
+  display: none;
+}
+
+/* Navbar 1  */
+#navbar1 ul li a span {
+  display: none;
+}
+
+#navbar1 ul li a i {
+  padding-bottom: 5px;
+}
+
+/* Sidebar */
+
+.nav {
+  width: 150px;
+}
+
+.sd-anim-cl {
+  animation-duration: 1.5s;
+}
+
+.sd-anim-op {
+  animation-duration: 0.5s;
+}

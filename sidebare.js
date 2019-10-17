@@ -3,7 +3,7 @@
 function openSlideMenu() {
   const menu = document.getElementById("menu");
   const side = document.getElementById("af");
-  side.className = "d-block afterside ";
+  side.className = "d-block afterside BG-white";
   menu.className = "nav d-flex f-col sd-anim-op ";
 
   document.body.style.overflow = "hidden";

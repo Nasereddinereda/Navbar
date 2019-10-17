@@ -40,8 +40,11 @@ window.onscroll = function() {
     }
   } else if (document.documentElement.scrollTop < 50) {
     navbar.className = "BG-ncol TR-dur wh-col ";
-    navbar1.className = "d-none";
+
     writing.innerHTML = "DATA USA";
     addwrt = false;
+    if (document.documentElement.scrollTop < 25) {
+      navbar1.className = "d-none";
+    }
   }
 };

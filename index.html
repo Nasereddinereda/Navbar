@@ -4,6 +4,11 @@
     <link rel="stylesheet" href="/style.css" />
     <link
       rel="stylesheet"
+      href="/mobile.css"
+      media="screen and (max-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
@@ -29,41 +34,43 @@
             <!-- Visible  -->
             <span class="slide">
               <div class="close">
-                <i class="fas fa-bars" onclick="openSlideMenu()"> Menu </i>
+                <i class="fas fa-bars" onclick="openSlideMenu()">
+                  <span> Menu </span>
+                </i>
               </div>
             </span>
             <!-- InVisible  -->
-            <div></div>
-            <div id="menu" class="nav d-none ">
+            <div id="menu" class="nav d-none f-col sd-anim-op  ">
               <!-- Menu close  -->
-              <div class="close d-flex d-end">
+              <div class="close d-flex d-end h-10 ">
                 <i class="fas fa-times" onclick="closeSlideMenu()"></i>
               </div>
-              <!-- Menu  -->
 
-              <div class="BG-white">
-                <div class="ml-6 ft-4 menuinv">
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                  <div><a href="#"> ABOUT </a></div>
-                </div>
-                <!-- Logo Menu  -->
-                <div>
-                  <ul class="d-row d-flex m-logo">
-                    <div>logo</div>
-                    <div>logo</div>
-                    <div>logo</div>
-                  </ul>
-                </div>
+              <!-- Menu  -->
+              <div class="ml-6 ft-4 menuinv h-65">
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#" class="activeC"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+                <div><a href="#"> ABOUT </a></div>
+              </div>
+
+              <!-- Logo Menu  -->
+              <div class="h-25">
+                <ul class="d-row d-flex m-logo">
+                  <div>logo</div>
+                  <div>logo</div>
+                  <div>logo</div>
+                </ul>
               </div>
             </div>
           </div>
@@ -73,29 +80,41 @@
         <!-- Nav bar 2  -->
         <nav id="navbar1" class="d-none">
           <ul>
-            <li class="ml-5">
-              <i class="fas fa-anchor ft-6 "></i>
-              <a href="#"> ABOUT </a>
-            </li>
-            <li class="active">
-              <i class="fas fa-anchor ft-6 "></i>
-              <a href="#"> ECONOMY </a>
+            <li>
+              <a href="#">
+                <i class="fas fa-anchor ft-6 t-c "></i>
+                <span class="ft-7 t-c">ABOUT</span>
+              </a>
             </li>
             <li>
-              <i class="fas fa-anchor ft-6 "></i>
-              <a href="#"> HEALTH </a>
+              <a href="#" class="activeBr">
+                <i class="fas fa-anchor ft-6 t-c "></i>
+                <span class="ft-7 t-c ">ECONOMY</span>
+              </a>
             </li>
             <li>
-              <i class="fas fa-anchor ft-6 "></i>
-              <a href="#"> DIVERSITY </a>
+              <a href="#">
+                <i class="fas fa-anchor ft-6 t-c "></i>
+                <span class="ft-7 t-c">HEALTH</span>
+              </a>
             </li>
             <li>
-              <i class="fas fa-anchor ft-6 "></i>
-              <a href="#"> EDUCATION </a>
+              <a href="#">
+                <i class="fas fa-anchor ft-6 t-c "></i>
+                <span class="ft-7 t-c">DIVERSITY</span>
+              </a>
             </li>
-            <li class="mr-5">
-              <i class="fas fa-anchor ft-6 "></i>
-              <a href="#"> HOUSING&LIVING </a>
+            <li>
+              <a href="#">
+                <i class="fas fa-anchor ft-6 t-c "></i>
+                <span class="ft-7 t-c">EDUCATION</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-anchor ft-6 t-c "></i>
+                <span class="ft-7 t-c">HOUSING&LIVING</span>
+              </a>
             </li>
           </ul>
         </nav>
